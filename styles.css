@@ -1,9 +1,36 @@
-html {
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    text-align: center;
+body {
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+#subtitle {
+  font-style: italic;
+  font-weight: lighter;
 }
 
 .container {
-    width:50%;
-    margin:auto;
+  width:50%;
+  margin:auto;
 }
+
+button {
+  cursor: pointer;
+}
+
+button, select, #budget {
+  font-size: 15px;
+  border: 2px solid;
+  border-radius : 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+fieldset,label,button,input,select {
+  margin-bottom: 10px;
+}
+
+label, legend {
+  font-weight: bold;
+}
+
