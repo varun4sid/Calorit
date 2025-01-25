@@ -43,3 +43,21 @@ label, legend {
   width: 50%;
   margin: auto;
 }
+
+.output {
+  padding: 10px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+hr {
+  margin: 20px 0px;
+}
