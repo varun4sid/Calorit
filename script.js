@@ -1,5 +1,6 @@
 const addEntryButton = document.getElementById('add-entry');
 const entryDropdown = document.getElementById('entry-dropdown');
+const clearButton = document.getElementById('clear');
 
 function addEntry() {
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
@@ -13,4 +14,15 @@ function addEntry() {
     targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 
+function clearForm() {
+    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+  
+    for (const container of inputContainers) {
+      container.innerHTML = '';
+    }
+  
+    budgetNumberInput.value = '';
+}
+
 addEntryButton.addEventListener("click", addEntry);
+clearButton.addEventListener("click",clearForm);
